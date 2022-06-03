@@ -1,4 +1,12 @@
+from flask import Flask
+
 from django.shortcuts import render
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+   return "Hello"
 
 # Create your views here.
 def counterView(request):
